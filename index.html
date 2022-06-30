@@ -242,8 +242,8 @@ lo,0,lp,0,lq,lr,ls,lt,lu,lv,lw,lx,ly,lz,kj,m0
 0,mv,mw,mx,1,1,1,1,1,1,1,1,1,1,my,mz
 n0,n1,1,1,1,1,1,1,1a6,1,1,1,1,1,1,1
 NAME Cliff
-ITM 6 6,12
 ITM 7 10,9
+ITM 6 6,12
 PAL 7
 
 ROOM 8
@@ -285,6 +285,7 @@ vo,vp,vq,vr,vs,vt,vu,vv,vw,vx,vy,vz,w0,w1,w2,w3
 wk,wl,wm,wn,wo,wp,wq,wr,ws,wt,wu,wv,ww,wx,wy,1
 1,wz,x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,xa,xb,1,xc
 NAME Forest
+ITM 9 8,11
 EXT 8,8 b 7,15
 PAL 9
 
@@ -306,6 +307,7 @@ ROOM b
 pu,192,19o,19p,19q,19r,19s,19t,19u,19v,19w,1,1,19x,1,1
 1,1,1,19y,19z,1a0,1a1,1a6,1a3,1a4,1a5,1,1,1,1,1
 NAME Forest2
+ITM a 1,13
 EXT 4,11 7 8,15
 PAL b
 
@@ -18751,6 +18753,32 @@ NAME Cat4
 DLG b
 POS 5 12,10
 
+SPR j
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+NAME Forestcat
+DLG g
+POS 9 4,14
+
+SPR k
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+NAME ForestSprite2
+DLG i
+POS b 6,13
+
 ITM 0
 00000000
 00100000
@@ -18885,6 +18913,7 @@ ITM 6
 00100000
 00000000
 NAME SparkleCliff
+DLG k
 
 ITM 7
 00000000
@@ -18905,6 +18934,7 @@ ITM 7
 00100000
 00000000
 NAME SparkleCliff2
+DLG l
 
 ITM 8
 00000000
@@ -18926,6 +18956,48 @@ ITM 8
 00000000
 NAME OuterWorldSparkle
 DLG f
+
+ITM 9
+00000000
+00100000
+01110000
+00100000
+00000100
+00001110
+00000100
+00000000
+>
+00000000
+00000100
+00001110
+00000100
+00100000
+01110000
+00100000
+00000000
+NAME ForestSparkle
+DLG h
+
+ITM a
+00000000
+00100000
+01110000
+00100000
+00000100
+00001110
+00000100
+00000000
+>
+00000000
+00000100
+00001110
+00000100
+00100000
+01110000
+00100000
+00000000
+NAME Forest2Sparkle
+DLG j
 
 DLG 0
 """
@@ -18960,7 +19032,10 @@ Where is everyone?
 NAME Bedroom dialog
 
 DLG 5
-{end}... blub
+"""
+Are you ready?
+Ready to come back to reality with me?{end}
+"""
 NAME CliffCat dialog
 
 DLG 6
@@ -18984,7 +19059,7 @@ You've locked these memories away.
 So far, far back into your mind. 
 
 They must be distressing for you,
-Or else we would not be here now. 
+or else we would not be here now. 
 How does this all make you feel?
 Revisiting your past . . . 
 """
@@ -19018,8 +19093,7 @@ DLG b
 """
 Avoidance. Anguish. Fear. 
 Your family are all in grief. 
-But you aren't able to talk to them about it, are you? 
-
+But you aren't able to talk to them about it, are you?
 """
 NAME Cat4 dialog
 
@@ -19033,7 +19107,7 @@ Did they finally leave me like Grandpa did?
 NAME LivingRoomSparkle dialog
 
 DLG d
-They wouldn't leave me . . . they wouldn't . . . 
+They wouldn't leave me . . . they wouldn't . . .
 NAME LivingRoomSparkle2 dialog
 
 DLG e
@@ -19049,13 +19123,69 @@ NAME CatOuterworld dialog
 
 DLG f
 """
-It was all so overwhelming when Grandpa died…
+It was all so overwhelming when Grandpa died . . .
 I didn't know what to do . . . who to turn to.
 Everyone had shut me out, so I shut down inside myself.
 I shut everything off.
 
 """
 NAME OuterWorldSparkle dialog
+
+DLG g
+"""
+How did you feel after your Grandpa died?
+Before you created this world that is. 
+"""
+NAME Forestcat dialog
+
+DLG h
+"""
+. . . I was shocked, but soon after was the pain. 
+Pain in the pit of my stomach that I couldn't push away. 
+Like a hole that couldn't be filled in. 
+And so, I escaped . . . I put those feelings in a box far away. 
+"""
+NAME ForestSparkle dialog
+
+DLG i
+"""
+You escaped your feelings by living in this dream. 
+But so did your parents . . . they shut you out.
+You had nowhere to go.
+No answers for your sister.
+No explanation for yourself.
+Only these feelings bubbling up inside you. 
+"""
+NAME ForestSprite2 dialog
+
+DLG j
+"""
+I was upset . . . no, I was angry. 
+They left me alone to deal with these feelings.
+Because suicide was taboo, it wasn't something you could openly speak on.
+But I needed to. It was scary. It was alienating. 
+So, instead I was angry because I was alone.
+I locked everything away and went far, far away. 
+
+"""
+NAME Forest2Sparkle dialog
+
+DLG k
+"""
+. . . It has been enough time now though that I can understand my parents were just going through their own grief.
+They were just as unprepared as I was.
+They had never learnt how to process their feelings either . . .
+"""
+NAME SparkleCliff dialog
+
+DLG l
+"""
+But I have my guardian now. 
+Someone I can talk to. 
+Someone who will understand.
+Someone who will listen.
+"""
+NAME SparkleCliff2 dialog
 
 VAR a
 42
